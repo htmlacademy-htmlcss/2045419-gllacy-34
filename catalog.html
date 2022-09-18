@@ -4,35 +4,38 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
     <header class="page-header">
       <nav class="navigation">
-        <a class="gllacy-link" href="index.html">
-          <img src="/images/logo.svg" alt="Логотип Глэйси." width="137" height="56">
-        </a>
-        <ul class="navigation-list">
-          <li class="navigation-list-item">
-            <a class="navigation-link" href="catalog.html">Каталог</a>
-          </li>
-          <li class="navigation-list-item">
-            <a class="navigation-link" href="#">Доставка и оплата</a>
-          </li>
-          <li class="navigation-list-item">
-            <a class="navigation-link" href="#">О компании</a>
-          </li>
-        </ul>
+        <div class="navigation-wrapper">
+          <a class="gllacy-link" href="index.html">
+            <img src="/images/logo.svg" alt="Логотип Глэйси." width="137" height="56">
+          </a>
+          <ul class="navigation-list">
+            <li class="navigation-list-item">
+              <a class="navigation-link" href="catalog.html">Каталог</a>
+            </li>
+            <li class="navigation-list-item">
+              <a class="navigation-link" href="#">Доставка и оплата</a>
+            </li>
+            <li class="navigation-list-item">
+              <a class="navigation-link" href="#">О компании</a>
+            </li>
+          </ul>
 
-        <div class="user-menu">
-          <a class="contacts-phones" href="tel:+78005558628">Тел.: +7 (800) 555-86-28</a>
-          <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
-            <button class="searh" type="button">открыть</button>
-            <label for="search"></label>
-            <input class="visually-hidden" type="text" id="search">
-          </form>
-          <button class="button-auth button-login" type="button">Вход</button>
-          <a class="cart-link" href="#">2 товара</a>
+          <div class="user-menu">
+            <a class="contacts-phone" href="tel:+78005558628">+7 (800) 555-86-28</a>
+            <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
+              <button class="searh" type="button">открыть</button>
+              <label for="search"></label>
+              <input class="visually-hidden" type="text" id="search">
+            </form>
+            <button class="button-auth button-login" type="button">Вход</button>
+            <a class="navigation-link cart-link" href="#">2 товара</a>
+          </div>
         </div>
       </nav>
     </header>
@@ -46,7 +49,7 @@
             <a class="breadcrumbs-link" href="#">Каталог</a>
           </li>
         </ul>
-        <h1 class="inner-header-tittle">Сливочное мороженое</h1>
+        <h1 class="tittle inner-header-tittle">Сливочное мороженое</h1>
       </header>
       <section class="options">
         <div class="sorting">
@@ -165,7 +168,8 @@
         <ul class="product-list">
           <li class="product-list-item">
             <a class="product-link" href="#">
-              <img class="product-image" src="/images/catalog/malinka.jpg" width="168" height="168">
+              <img class="product-image" src="/images/catalog/malinka.jpg" width="168" height="168"
+                alt="ярко-красный шарик мороженого.">
               <p class="product-name">Малинка</p>
               <span class="product-text">Сливочное мороженое с малиновым джемом</span>
               <span class="product-price">310 ₽/кг</span>
@@ -176,7 +180,8 @@
           </li>
           <li class="product-list-item">
             <a class="product-link" href="#">
-              <img class="product-image" src="/images/catalog/pistachio.jpg" width="168" height="168">
+              <img class="product-image" src="/images/catalog/pistachio.jpg" width="168" height="168"
+                alt="фисташковое мороженое с шоколадной крошкой.">
               <p class="product-name">Фисташка</p>
               <span class="product-text">Фисташковый пломбир с кусочками шоколада</span>
               <span class="product-price">340 ₽/кг</span>
@@ -187,7 +192,8 @@
           </li>
           <li class="product-list-item">
             <a class="product-link" href="#">
-              <img class="product-image" src="/images/catalog/chernika.jpg" width="168" height="168">
+              <img class="product-image" src="/images/catalog/chernika.jpg" width="168" height="168"
+                alt="шарик крем-брюле с прослойкой черничного джема.">
               <p class="product-name">Черника</p>
               <span class="product-text">Крем-брюле с черничным джемом</span>
               <span class="product-price">330 ₽/кг</span>
@@ -198,7 +204,8 @@
           </li>
           <li class="product-list-item">
             <a class="product-link" href="#">
-              <img class="product-image" src="/images/catalog/bubble-gum.jpg" width="168" height="168">
+              <img class="product-image" src="/images/catalog/bubble-gum.jpg" width="168" height="168"
+                alt="Шарик мороженого голубого цвета с разноцветной крошкой.">
               <p class="product-name">Бабл-гам</p>
               <span class="product-text">Ванильный пломбир со сладкой посыпкой</span>
               <span class="product-price">320 ₽/кг</span>
@@ -209,7 +216,8 @@
           </li>
           <li class="product-list-item">
             <a class="product-link" href="#">
-              <img class="product-image" src="/images/catalog/ejevika.jpg" width="168" height="168">
+              <img class="product-image" src="/images/catalog/ejevika.jpg" width="168" height="168"
+                alt="нежный пломбир с ежевикой.">
               <p class="product-name">Ежевика</p>
               <span class="product-text">Сливочное мороженое с ежевичным джемом</span>
               <span class="product-price">330 ₽/кг</span>
@@ -220,7 +228,8 @@
           </li>
           <li class="product-list-item">
             <a class="product-link" href="#">
-              <img class="product-image" src="/images/catalog/banana.jpg" width="168" height="168">
+              <img class="product-image" src="/images/catalog/banana.jpg" width="168" height="168"
+                alt="легкое мороженое с бананом.">
               <p class="product-name">Банан</p>
               <span class="product-text">Сливочный пломбир с банановым вкусом</span>
               <span class="product-price">340 ₽/кг</span>
@@ -231,7 +240,8 @@
           </li>
           <li class="product-list-item">
             <a class="product-link" href="#">
-              <img class="product-image" src="/images/catalog/chocolate.jpg" width="168" height="168">
+              <img class="product-image" src="/images/catalog/chocolate.jpg" width="168" height="168"
+                alt="стандартное шоколадное мороженое.">
               <p class="product-name">Шоколадка</p>
               <span class="product-text">Классический шоколадный пломбир</span>
               <span class="product-price">270 ₽/кг</span>
@@ -242,7 +252,8 @@
           </li>
           <li class="product-list-item">
             <a class="product-link" href="#">
-              <img class="product-image" src="/images/catalog/strawberry.jpg" width="168" height="168">
+              <img class="product-image" src="/images/catalog/strawberry.jpg" width="168" height="168"
+                alt="пломбир с клубничкой.">
               <p class="product-name">Клубничка</p>
               <span class="product-text">Сливочный пломбир с клубничным вкусом</span>
               <span class="product-price">300 ₽/кг</span>
@@ -253,7 +264,8 @@
           </li>
           <li class="product-list-item">
             <a class="product-link" href="#">
-              <img class="product-image" src="/images/catalog/lemon.jpg" width="168" height="168">
+              <img class="product-image" src="/images/catalog/lemon.jpg" width="168" height="168"
+                alt="мроженое с терпким лимонным вкусом.">
               <p class="product-name">Лимон</p>
               <span class="product-text">Освежающий лимонный сорбет</span>
               <span class="product-price">310 ₽/кг</span>
@@ -264,7 +276,8 @@
           </li>
           <li class="product-list-item">
             <a class="product-link" href="#">
-              <img class="product-image" src="/images/catalog/mentol.jpg" width="168" height="168">
+              <img class="product-image" src="/images/catalog/mentol.jpg" width="168" height="168"
+                alt="мороженое с приятным холодком.">
               <p class="product-name">Ментол</p>
               <span class="product-text">Сливочный пломбир с ментоловым сиропом</span>
               <span class="product-price">320 ₽/кг</span>
@@ -275,7 +288,8 @@
           </li>
           <li class="product-list-item">
             <a class="product-link" href="#">
-              <img class="product-image" src="/images/catalog/nut.jpg" width="168" height="168">
+              <img class="product-image" src="/images/catalog/nut.jpg" width="168" height="168"
+                alt="пломбир в сочетании с фисташкой.">
               <p class="product-name">Орешек</p>
               <span class="product-text">Фисташковый пломбир с шоколадным сиропом</span>
               <span class="product-price">360 ₽/кг</span>
@@ -286,7 +300,8 @@
           </li>
           <li class="product-list-item">
             <a class="product-link" href="#">
-              <img class="product-image" src="/images/catalog/creme.jpg" width="168" height="168">
+              <img class="product-image" src="/images/catalog/creme.jpg" width="168" height="168"
+                alt="сладкое мороженое без лишнего.">
               <p class="product-name">Крем-брюле</p>
               <span class="product-text">Классическое крем-брюле </span>
               <span class="product-price">280 ₽/кг</span>
