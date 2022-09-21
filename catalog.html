@@ -67,17 +67,17 @@
             </div>
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-tittle">Цена:</legend>
+              <div class="range-wrapper-inputs">
+                <label class="catalog-filter-label">
+                  <input class="range-bar-input input-min" type="number" name="min-price" placeholder="100 ₽">
+                </label>
+                <span>-</span>
+                <label class="catalog-filter-label catalog-filter-label-max">
+                  <input class="range-bar-input input-max" type="number" name="max-price" placeholder="500 ₽">
+                </label>
+              </div>
               <div class="range">
                 <div class="range-scale">
-                  <div class="range-wrapper-inputs">
-                    <label class="catalog-filter-label">
-                      <input class="range-bar-input input-min" type="number" name="min-price" placeholder="100 ₽">
-                    </label>
-                    <span>-</span>
-                    <label class="catalog-filter-label catalog-filter-label-max">
-                      <input class="range-bar-input input-max" type="number" name="max-price" placeholder="500 ₽">
-                    </label>
-                  </div>
                   <div class="range-bar">
                     <button type="button" class="range-toggle toggle-min">
                       <span class="visually-hidden">Изменить минимальную цену.</span>
