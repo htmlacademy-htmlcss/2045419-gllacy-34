@@ -50,7 +50,7 @@
             <h3 class="tittle slider-tittle">Нежный пломбир с клубничным джемом</h3>
             <p class="subtittle-text">Натуральное мороженое из свежих сливок
               и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</p>
-            <button class="order-button" type="button">Заказать</button>
+            <button class="button order-button" type="button">Заказать</button>
             <img class="slider-image" src="/images/slider-strawberry.png"
               alt="Рожок с красным топпингом на белом пломбире." width="306" height="507">
           </li>
@@ -58,7 +58,7 @@
             <h3 class="tittle slider-tittle">Сливочное мороженое со вкусом банана</h3>
             <p class="subtittle-text">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение
               даже в самый жаркий летний день.</p>
-            <button class="order-button" type="button">Заказать</button>
+            <button class="button order-button" type="button">Заказать</button>
             <img class="slider-image" src="/images/slider-banana.png"
               alt="Рожок с тремя шариками сливочного мороженого." width="306" height="507">
           </li>
@@ -66,7 +66,7 @@
             <h3 class="tittle slider-tittle">Карамельный пломбир с маршмеллоу</h3>
             <p class="subtittle-text">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет сердца
               сладкоежек всех возрастов.</p>
-            <button class="order-button" type="button">Заказать</button>
+            <button class="button order-button" type="button">Заказать</button>
             <img class="slider-image" src="/images/slider-marshmallow.png"
               alt="Рожок из четырех шариков украшенный листиком мяты." width="306" height="507">
           </li>
@@ -121,12 +121,12 @@
               <h3 class="gift-tittle raspberry-tittle">Малинка даром!</h3>
               <p>При покупке 2 кг любого фруктового<br> мороженого добавим в ваш заказ банку<br> малинового варенья
                 бесплатно.</p>
-              <a class="gift-button" href="#">Хочу подарок</a>
+              <a class="button gift-button" href="#">Хочу подарок</a>
             </div>
             <div class="bonus-wrapper bonus-marshmellow">
               <h3 class="gift-tittle raspberry-tittle">Маршмеллоу даром!</h3>
               <p>При покупке 2 кг пломбира добавим<br> в ваш заказ упаковку нежных<br> зефирок совершенно бесплатно.</p>
-              <a class="gift-button" href="#">Хочу подарок</a>
+              <a class="button gift-button" href="#">Хочу подарок</a>
             </div>
           </div>
         </div>
@@ -135,37 +135,79 @@
       <section class="most-popular">
         <div class="content-wrapper most-popular-wrapper">
           <h2 class="tittle most-popular-tittle">Попробуйте самые популярные<br> вкусы нашего мороженого</h2>
-          <ul class="popular-list">
-            <li class="popular-list-item">
+          <ul class="product-list">
+            <li class="product-list-item">
               <img src="/images/catalog/malinka.png" alt="ярко-красный шарик мороженого." width="168" height="168">
               <h3 class="icecream-name">Малинка</h3>
               <p class="icecream-text">Сливочное мороженое с малиновым джемом</p>
-              <span class="popular-price">310 ₽/кг</span>
-              <button class="add-to-cart" type="button"></button>
+              <div class="price-wrapper">
+                <span class="product-price">310 ₽/кг</span>
+                <button class="add-to-cart" type="button">
+                  <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M1.16667 0.25C0.798477 0.25 0.5 0.548477 0.5 0.916667C0.5 1.28486 0.798477 1.58333 1.16667 1.58333H2.93794L3.40537 3.91872C3.40821 3.93667 3.41176 3.95438 3.416 3.97182L4.38338 8.80515L4.3835 8.80571C4.46706 9.22572 4.69562 9.60299 5.02921 9.87153C5.36111 10.1387 5.77595 10.2813 6.20183 10.2748H11.8225C12.2484 10.2813 12.6633 10.1387 12.9952 9.87153C13.3289 9.60287 13.5575 9.22538 13.641 8.80515L13.641 8.80515L13.642 8.80016L14.5691 3.93872C14.6063 3.74355 14.5545 3.54195 14.4279 3.38887C14.3012 3.23578 14.1129 3.14716 13.9142 3.14716H4.61072L4.1381 0.785829C4.07574 0.474257 3.80215 0.25 3.4844 0.25H1.16667ZM5.69098 8.54444L4.87759 4.4805H13.1084L12.3328 8.54736C12.31 8.65988 12.2485 8.7609 12.1591 8.83291C12.0691 8.90535 11.9565 8.94383 11.841 8.94162L11.841 8.94149H11.8282H6.19614V8.94137L6.18337 8.94162C6.06787 8.94383 5.95528 8.90535 5.8653 8.83291C5.77531 8.76048 5.71368 8.6587 5.69117 8.5454L5.69098 8.54444ZM4.55739 12.5054C4.55739 11.8175 5.1151 11.2597 5.80307 11.2597C6.49105 11.2597 7.04876 11.8175 7.04876 12.5054C7.04876 13.1934 6.49105 13.7511 5.80307 13.7511C5.1151 13.7511 4.55739 13.1934 4.55739 12.5054ZM10.9307 12.5054C10.9307 11.8175 11.4884 11.2597 12.1764 11.2597C12.8644 11.2597 13.4221 11.8175 13.4221 12.5054C13.4221 13.1934 12.8644 13.7511 12.1764 13.7511C11.4884 13.7511 10.9307 13.1934 10.9307 12.5054Z"
+                      fill="#FCFCFC" />
+                  </svg>
+                  <span class="visually-hidden">добавить товар в корзину.</span>
+                </button>
+              </div>
             </li>
-            <li class="popular-list-item">
-              <img src="/images/catalog/phistachio.png" alt="фисташковое мороженое с шоколадной крошкой." width="168"
-                height="168">
-              <h3 class="icecream-name">Фисташка</h3>
-              <p class="icecream-text">Фисташковый пломбир с кусочками шоколада</p>
-              <span class="popular-price">340 ₽/кг</span>
-              <button class="add-to-cart" type="button"></button>
+            <li class="product-list-item">
+              <a class="product-link" href="#">
+                <img src="/images/catalog/phistachio.png" alt="фисташковое мороженое с шоколадной крошкой." width="168"
+                  height="168">
+                <h3 class="icecream-name">Фисташка</h3>
+                <p class="icecream-text">Фисташковый пломбир с кусочками шоколада</p>
+              </a>
+              <div class="price-wrapper">
+                <span class="product-price">340 ₽/кг</span>
+                <button class="add-to-cart" type="button">
+                  <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M1.16667 0.25C0.798477 0.25 0.5 0.548477 0.5 0.916667C0.5 1.28486 0.798477 1.58333 1.16667 1.58333H2.93794L3.40537 3.91872C3.40821 3.93667 3.41176 3.95438 3.416 3.97182L4.38338 8.80515L4.3835 8.80571C4.46706 9.22572 4.69562 9.60299 5.02921 9.87153C5.36111 10.1387 5.77595 10.2813 6.20183 10.2748H11.8225C12.2484 10.2813 12.6633 10.1387 12.9952 9.87153C13.3289 9.60287 13.5575 9.22538 13.641 8.80515L13.641 8.80515L13.642 8.80016L14.5691 3.93872C14.6063 3.74355 14.5545 3.54195 14.4279 3.38887C14.3012 3.23578 14.1129 3.14716 13.9142 3.14716H4.61072L4.1381 0.785829C4.07574 0.474257 3.80215 0.25 3.4844 0.25H1.16667ZM5.69098 8.54444L4.87759 4.4805H13.1084L12.3328 8.54736C12.31 8.65988 12.2485 8.7609 12.1591 8.83291C12.0691 8.90535 11.9565 8.94383 11.841 8.94162L11.841 8.94149H11.8282H6.19614V8.94137L6.18337 8.94162C6.06787 8.94383 5.95528 8.90535 5.8653 8.83291C5.77531 8.76048 5.71368 8.6587 5.69117 8.5454L5.69098 8.54444ZM4.55739 12.5054C4.55739 11.8175 5.1151 11.2597 5.80307 11.2597C6.49105 11.2597 7.04876 11.8175 7.04876 12.5054C7.04876 13.1934 6.49105 13.7511 5.80307 13.7511C5.1151 13.7511 4.55739 13.1934 4.55739 12.5054ZM10.9307 12.5054C10.9307 11.8175 11.4884 11.2597 12.1764 11.2597C12.8644 11.2597 13.4221 11.8175 13.4221 12.5054C13.4221 13.1934 12.8644 13.7511 12.1764 13.7511C11.4884 13.7511 10.9307 13.1934 10.9307 12.5054Z"
+                      fill="#FCFCFC" />
+                  </svg>
+                  <span class="visually-hidden">добавить товар в корзину.</span>
+                </button>
+              </div>
             </li>
-            <li class="popular-list-item">
-              <img src="/images/catalog/creme.png" alt="Шарик Крем-брюле с прослойкой черничного джема." width="168"
-                height="168">
-              <h3 class="icecream-name">Черника</h3>
-              <p class="icecream-text">Крем-брюле с черничным джемом </p>
-              <span class="popular-price">330 ₽/кг</span>
-              <button class="add-to-cart" type="button"></button>
+            <li class="product-list-item">
+              <a class="product-link" href="#">
+                <img src="/images/catalog/creme.png" alt="Шарик Крем-брюле с прослойкой черничного джема." width="168"
+                  height="168">
+                <h3 class="icecream-name">Черника</h3>
+                <p class="icecream-text">Крем-брюле с черничным джемом </p>
+              </a>
+              <div class="price-wrapper">
+                <span class="product-price">330 ₽/кг</span>
+                <button class="add-to-cart" type="button">
+                  <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M1.16667 0.25C0.798477 0.25 0.5 0.548477 0.5 0.916667C0.5 1.28486 0.798477 1.58333 1.16667 1.58333H2.93794L3.40537 3.91872C3.40821 3.93667 3.41176 3.95438 3.416 3.97182L4.38338 8.80515L4.3835 8.80571C4.46706 9.22572 4.69562 9.60299 5.02921 9.87153C5.36111 10.1387 5.77595 10.2813 6.20183 10.2748H11.8225C12.2484 10.2813 12.6633 10.1387 12.9952 9.87153C13.3289 9.60287 13.5575 9.22538 13.641 8.80515L13.641 8.80515L13.642 8.80016L14.5691 3.93872C14.6063 3.74355 14.5545 3.54195 14.4279 3.38887C14.3012 3.23578 14.1129 3.14716 13.9142 3.14716H4.61072L4.1381 0.785829C4.07574 0.474257 3.80215 0.25 3.4844 0.25H1.16667ZM5.69098 8.54444L4.87759 4.4805H13.1084L12.3328 8.54736C12.31 8.65988 12.2485 8.7609 12.1591 8.83291C12.0691 8.90535 11.9565 8.94383 11.841 8.94162L11.841 8.94149H11.8282H6.19614V8.94137L6.18337 8.94162C6.06787 8.94383 5.95528 8.90535 5.8653 8.83291C5.77531 8.76048 5.71368 8.6587 5.69117 8.5454L5.69098 8.54444ZM4.55739 12.5054C4.55739 11.8175 5.1151 11.2597 5.80307 11.2597C6.49105 11.2597 7.04876 11.8175 7.04876 12.5054C7.04876 13.1934 6.49105 13.7511 5.80307 13.7511C5.1151 13.7511 4.55739 13.1934 4.55739 12.5054ZM10.9307 12.5054C10.9307 11.8175 11.4884 11.2597 12.1764 11.2597C12.8644 11.2597 13.4221 11.8175 13.4221 12.5054C13.4221 13.1934 12.8644 13.7511 12.1764 13.7511C11.4884 13.7511 10.9307 13.1934 10.9307 12.5054Z"
+                      fill="#FCFCFC" />
+                  </svg>
+                  <span class="visually-hidden">добавить товар в корзину.</span>
+                </button>
+              </div>
             </li>
-            <li class="popular-list-item">
-              <img src="/images/catalog/bubble-gum.png" alt="Шарик мороженого голубого цвета с разноцветной крошкой."
-                width="168" height="168">
-              <h3 class="icecream-name">Бабл-гам</h3>
-              <p class="icecream-text">Ванильный пломбир со сладкой посыпкой</p>
-              <span class="popular-price">320 ₽/кг</span>
-              <button class="add-to-cart" type="button"></button>
+            <li class="product-list-item">
+              <a class="product-link" href="#">
+                <img src="/images/catalog/bubble-gum.png" alt="Шарик мороженого голубого цвета с разноцветной крошкой."
+                  width="168" height="168">
+                <h3 class="icecream-name">Бабл-гам</h3>
+                <p class="icecream-text">Ванильный пломбир со сладкой посыпкой</p>
+              </a>
+              <div class="price-wrapper">
+                <span class="product-price">320 ₽/кг</span>
+                <button class="add-to-cart" type="button">
+                  <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M1.16667 0.25C0.798477 0.25 0.5 0.548477 0.5 0.916667C0.5 1.28486 0.798477 1.58333 1.16667 1.58333H2.93794L3.40537 3.91872C3.40821 3.93667 3.41176 3.95438 3.416 3.97182L4.38338 8.80515L4.3835 8.80571C4.46706 9.22572 4.69562 9.60299 5.02921 9.87153C5.36111 10.1387 5.77595 10.2813 6.20183 10.2748H11.8225C12.2484 10.2813 12.6633 10.1387 12.9952 9.87153C13.3289 9.60287 13.5575 9.22538 13.641 8.80515L13.641 8.80515L13.642 8.80016L14.5691 3.93872C14.6063 3.74355 14.5545 3.54195 14.4279 3.38887C14.3012 3.23578 14.1129 3.14716 13.9142 3.14716H4.61072L4.1381 0.785829C4.07574 0.474257 3.80215 0.25 3.4844 0.25H1.16667ZM5.69098 8.54444L4.87759 4.4805H13.1084L12.3328 8.54736C12.31 8.65988 12.2485 8.7609 12.1591 8.83291C12.0691 8.90535 11.9565 8.94383 11.841 8.94162L11.841 8.94149H11.8282H6.19614V8.94137L6.18337 8.94162C6.06787 8.94383 5.95528 8.90535 5.8653 8.83291C5.77531 8.76048 5.71368 8.6587 5.69117 8.5454L5.69098 8.54444ZM4.55739 12.5054C4.55739 11.8175 5.1151 11.2597 5.80307 11.2597C6.49105 11.2597 7.04876 11.8175 7.04876 12.5054C7.04876 13.1934 6.49105 13.7511 5.80307 13.7511C5.1151 13.7511 4.55739 13.1934 4.55739 12.5054ZM10.9307 12.5054C10.9307 11.8175 11.4884 11.2597 12.1764 11.2597C12.8644 11.2597 13.4221 11.8175 13.4221 12.5054C13.4221 13.1934 12.8644 13.7511 12.1764 13.7511C11.4884 13.7511 10.9307 13.1934 10.9307 12.5054Z"
+                      fill="#FCFCFC" />
+                  </svg>
+                  <span class="visually-hidden">добавить товар в корзину.</span>
+                </button>
+              </div>
             </li>
           </ul>
         </div>
@@ -174,7 +216,7 @@
       <section class="advantages">
         <div class="content-wrapper advantages-wrapper">
           <div class="advantages-text">
-            <h2 class="tittle advantages-tittle">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого
+            <h2 class="tittle advantages-tittle">Магазин Глейси – это онлайн и офлайн-магазин по продаже<br> мороженого
               собственного
               производства на развес</h2>
             <ul class="advantages-list">
@@ -213,8 +255,8 @@
               Честно =)</p>
             <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
               <label class="visually-hidden" for="newsletter-email">Email</label>
-              <input class="field" type="email" placeholder="email@example.com" name="newsletter-email"
-                id="newsletter-email" required>
+              <input class="email-input delivery-input" type="email" placeholder="email@example.com"
+                name="newsletter-email" id="newsletter-email" required>
               <button class="red-button button button-newsletter" type="submit">Отправить</button>
             </form>
           </div>
@@ -229,15 +271,21 @@
               дом, и курьер привезёт вам ваш заказ в течение часа!</p>
           </div>
           <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
-            <span class="delivery-form-text">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить
-              заказ.</span>
-            <label for="date" class="delivery-label">Дата</label>
-            <input class="delivery-input" id="date">
-            <label for="tel" class="delivery-label">Телефон</label>
-            <input class="delivery-input" id="tel">
-            <label for="address" class="delivery-label">Адрес</label>
-            <input class="delivery-input" id="address">
-            <button class="red-button delivery-form-button" type="submit">Отправить</button>
+            <p class="delivery-form-text">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить
+              заказ.</p>
+            <div class="delivery-input-wrapper">
+              <label class="delivery-form-label" for="date" class="delivery-label">Дата
+                <input class="delivery-input delivery-input-date" id="date" type="text" value="01.04.2020">
+              </label>
+              <label class="delivery-form-label" for="tel" class="delivery-label">Телефон
+                <input class="delivery-input delivery-input-tel" id="tel" type="text" value="+7 800 999-00-00">
+              </label>
+              <label class="delivery-form-label delivery-form-address" for="address" class="delivery-label">Адрес
+                <input class="delivery-input delivery-input-address" id="address" type="text"
+                  value="ул. Большая Конюшенная, 19/8">
+              </label>
+              <button class="red-button delivery-form-button button" type="submit">Отправить</button>
+            </div>
           </form>
         </div>
       </section>
@@ -246,13 +294,13 @@
           <h2 class="visually-hidden">Обратная связь.</h2>
           <div class="contacts-wrapper">
             <address class="contacts-address">
-              <span class="feedback-tittle">Адрес главного офиса<br> и офлайн-магазина:</span>
+              <p class="feedback-tittle">Адрес главного офиса<br> и офлайн-магазина:</p>
               <p class="feedback-text">наб. реки Карповки,<br> 5 лит П, Санкт-Петербург</p>
-              <span class="phone-text">Для заказов по телефону:</span>
+              <p class="phone-text">Для заказов по телефону:</p>
               <p class="feedback-phone" href="tel:+78128121212">+7 (812) 812-12-12</p>
-              <span class="shedule-text">(с 10 до 20 ежедневно)</span>
+              <p class="shedule-text">(с 10 до 20 ежедневно)</p>
             </address>
-            <a class="red-button feedback-link" href="#">Форма обратной связи</a>
+            <a class="button red-button feedback-link" href="#">Форма обратной связи</a>
           </div>
         </div>
       </section>
