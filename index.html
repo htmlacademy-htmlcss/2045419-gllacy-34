@@ -46,35 +46,49 @@
           </div>
           <ul class="navigation-list navigation-user">
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+              <a class="navigation-link navigation-link-phone header-link" href="tel:+78005558628">+7 800 555-86-28</a>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item navigation-item-search">
               <button type="button" class="navigation-link header-link header-button navigation-link-search">
-                <svg width="16" height="17" fill="none" viewBox="0 0 16 17"  xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.66 8.19a4.67 4.67 0 1 1 9.34 0 4.67 4.67 0 0 1-9.34 0Zm8.42 4.69a6 6 0 1 1 .94-.94l2.45 2.44a.67.67 0 1 1-.94.95l-2.45-2.45Z" fill="#2D3440"/></svg>
+                <svg width="16" height="17" fill="none" viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true" focusable="false">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M2.66 8.19a4.67 4.67 0 1 1 9.34 0 4.67 4.67 0 0 1-9.34 0Zm8.42 4.69a6 6 0 1 1 .94-.94l2.45 2.44a.67.67 0 1 1-.94.95l-2.45-2.45Z"
+                    fill="#2D3440" />
+                </svg>
                 <span class="visually-hidden">Поиск.</span>
               </button>
 
               <div class="header-popap header-popap-search">
                 <form class="header-popap-form" action="https://echo.htmlacademy.ru">
-                  <input class="header-popap-input page-input" name="search" type="search" placeholder="Поиск по сайту">
+                  <label class="visually-hidden" for="search">поле поиска по сайту.</label>
+                  <input class="header-popap-input page-input search-input" name="search" type="search"
+                    placeholder="Поиск по сайту">
                 </form>
               </div>
             </li>
             <li class="navigation-item">
               <button type="button" class="navigation-link header-link header-button navigation-link-personal-account">
-                <svg width="16" height="17" fill="none" viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path fill-rule="evenodd" clip-rule="evenodd" d="M9 2.52c0-.36.3-.66.67-.66h2.66a2 2 0 0 1 2 2v9.33a2 2 0 0 1-2 2H9.67a.67.67 0 0 1 0-1.33h2.66a.67.67 0 0 0 .67-.67V3.86a.67.67 0 0 0-.67-.67H9.67A.67.67 0 0 1 9 2.52Zm-3.14 2.2a.67.67 0 0 1 .94 0l3.33 3.33a.69.69 0 0 1 .13.18.66.66 0 0 1-.13.77L6.8 12.33a.67.67 0 1 1-.94-.94l2.2-2.2h-6.4a.67.67 0 1 1 0-1.33h6.4l-2.2-2.2a.67.67 0 0 1 0-.94Z" fill="#2D3440"/></svg>
+                <svg width="16" height="17" fill="none" viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true" focusable="false">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M9 2.52c0-.36.3-.66.67-.66h2.66a2 2 0 0 1 2 2v9.33a2 2 0 0 1-2 2H9.67a.67.67 0 0 1 0-1.33h2.66a.67.67 0 0 0 .67-.67V3.86a.67.67 0 0 0-.67-.67H9.67A.67.67 0 0 1 9 2.52Zm-3.14 2.2a.67.67 0 0 1 .94 0l3.33 3.33a.69.69 0 0 1 .13.18.66.66 0 0 1-.13.77L6.8 12.33a.67.67 0 1 1-.94-.94l2.2-2.2h-6.4a.67.67 0 1 1 0-1.33h6.4l-2.2-2.2a.67.67 0 0 1 0-.94Z"
+                    fill="#2D3440" />
+                </svg>
                 <span class="header-button-text">Вход</span>
               </button>
 
-              <div class="header-popap header-popap-personal">
-                <p class="header-popap-title">Личный кабинет</p>
+              <div class="header-popap header-popap-auth">
+                <p class="header-popap-tittle">Личный кабинет</p>
                 <form class="header-popap-form" action="https://echo.htmlacademy.ru">
-                  <div class="header-popap-form-inner">
-                    <input class="header-popap-input page-input" name="email" type="email" placeholder="email@example.com">
-                    <input class="header-popap-input page-input" name="password" type="password" value="dsadas">
+                  <div class="header-popap-form-wrapper">
+                    <input class="header-popap-input page-input popap-email-input" name="email" type="email"
+                      value="email@example.com" placeholder="введите email">
+                    <input class="header-popap-input page-input" name="password" type="password" value="asdfgh"
+                      placeholder="введите пароль">
                   </div>
-                  <div class="header-popap-form-bottom">
-                    <button type="submit" class="page-button">Войти</button>
+                  <div class="header-popap-form-buttons">
+                    <button type="submit" class="button red-button popap-button">Войти</button>
                     <div class="header-popap-form-links">
                       <a href="#" class="header-popap-form-link">Забыли пароль?</a>
                       <a href="#" class="header-popap-form-link">Регистрация</a>
@@ -85,38 +99,56 @@
             </li>
             <li class="navigation-item">
               <button type="button" class="navigation-link header-link header-button navigation-link-basket">
-                <svg width="16" height="17" fill="none" viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.17 2.1a.67.67 0 0 0 0 1.34h1.77l.47 2.34v.05l.97 4.83a1.83 1.83 0 0 0 1.82 1.47h5.62a1.83 1.83 0 0 0 1.82-1.47l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.36a.67.67 0 0 0-.66-.53H1.17Zm4.52 8.3-.81-4.06h8.23l-.78 4.07a.5.5 0 0 1-.49.39H6.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z" fill="#2D3440"/></svg>
+                <svg width="16" height="17" fill="none" viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true" focusable="false">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1.17 2.1a.67.67 0 0 0 0 1.34h1.77l.47 2.34v.05l.97 4.83a1.83 1.83 0 0 0 1.82 1.47h5.62a1.83 1.83 0 0 0 1.82-1.47l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.36a.67.67 0 0 0-.66-.53H1.17Zm4.52 8.3-.81-4.06h8.23l-.78 4.07a.5.5 0 0 1-.49.39H6.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
+                    fill="#2D3440" />
+                </svg>
                 <span class="header-button-text">2 товара</span>
               </button>
-              <div class="header-popap">
-                <p class="header-popap-title">Корзина</p>
+              <div class="header-popap header-popap-cart">
+                <p class="header-popap-tittle">Корзина</p>
                 <ul class="header-popap-list">
                   <li class="header-popap-item">
-                    <img class="basket-product-img" src="./images/product-1.png" alt="" width="46" height="46">
+                    <img class="basket-product-image" src="/images/malinka-mini.png" alt="яркое малиновое мороженое."
+                      width="46" height="46">
                     <div class="basket-product-content">
-                      <p class="basket-product-title">Малинка</h6>
+                      <p class="basket-product-tittle">Малинка</h6>
                       <p class="basket-product-info">1 кг х 310 ₽</p>
                     </div>
                     <p class="basket-product-price">310 ₽</p>
                     <button class="basket-product-delete" type="button">
-                      <span class="visually-hidden">Удалить</span>
+                      <span class="visually-hidden">Удалить товар.</span>
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M9.80303 1.13807C10.0634 0.877722 10.0634 0.455612 9.80303 0.195262C9.54268 -0.0650874 9.12057 -0.0650874 8.86022 0.195262L4.99914 4.05633L1.13807 0.195262C0.877722 -0.0650874 0.455612 -0.0650874 0.195262 0.195262C-0.0650874 0.455612 -0.0650874 0.877722 0.195262 1.13807L4.05633 4.99914L0.195262 8.86022C-0.0650874 9.12057 -0.0650874 9.54268 0.195262 9.80303C0.455612 10.0634 0.877722 10.0634 1.13807 9.80303L4.99914 5.94195L8.86022 9.80303C9.12057 10.0634 9.54268 10.0634 9.80303 9.80303C10.0634 9.54268 10.0634 9.12057 9.80303 8.86022L5.94195 4.99914L9.80303 1.13807Z"
+                          fill="#2D3440" />
+                      </svg>
+
                     </button>
                   </li>
                   <li class="header-popap-item">
-                    <img class="basket-product-img" src="./images/product-4.png" alt="" width="46" height="46">
+                    <img class="basket-product-image" src="/images/bubblegum-mini.png"
+                      alt="мороженое небесного цвета с посыпкой." width="46" height="46">
                     <div class="basket-product-content">
-                      <p class="basket-product-title">Бабл-гам</h6>
+                      <p class="basket-product-tittle">Бабл-гам</h6>
                       <p class="basket-product-info">1,5 кг х 320 ₽</p>
                     </div>
                     <p class="basket-product-price">480 ₽</p>
                     <button class="basket-product-delete" type="button">
-                      <span class="visually-hidden">Удалить</span>
+                      <span class="visually-hidden">Удалить товар.</span>
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M9.80303 1.13807C10.0634 0.877722 10.0634 0.455612 9.80303 0.195262C9.54268 -0.0650874 9.12057 -0.0650874 8.86022 0.195262L4.99914 4.05633L1.13807 0.195262C0.877722 -0.0650874 0.455612 -0.0650874 0.195262 0.195262C-0.0650874 0.455612 -0.0650874 0.877722 0.195262 1.13807L4.05633 4.99914L0.195262 8.86022C-0.0650874 9.12057 -0.0650874 9.54268 0.195262 9.80303C0.455612 10.0634 0.877722 10.0634 1.13807 9.80303L4.99914 5.94195L8.86022 9.80303C9.12057 10.0634 9.54268 10.0634 9.80303 9.80303C10.0634 9.54268 10.0634 9.12057 9.80303 8.86022L5.94195 4.99914L9.80303 1.13807Z"
+                          fill="#2D3440" />
+                      </svg>
                     </button>
                   </li>
                 </ul>
                 <div class="header-popap-bottom">
-                  <button type="button" class="page-button header-popap-button">Оформить заказ</button>
-                  <span class="header-popap-price">Итого: 790 ₽</span>
+                  <button type="button" class="button red-button cart-button">Оформить заказ</button>
+                  <span class="basket-product-price header-popap-price">Итого: 790 ₽</span>
                 </div>
               </div>
               <div class="header-popap header-popap-empty">
