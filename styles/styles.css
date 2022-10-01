@@ -451,27 +451,36 @@ body[data-color='yellow'] {
 }
 
 .social-link {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid rgba(252, 252, 252, 0.4);
-  background-clip: content-box;
   border-radius: 50%;
+  border: 2px solid rgba(252, 252, 252, 0.3);
 }
 
-.social-link:hover {
+.social-link::after {
+  position: absolute;
+  content: "";
+  width: 19px;
+  height: 19px;
+  top: 2.5px;
+  left: 2.5px;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.social-link:hover::after {
   background-color: #2d3440;
 }
 
 .social-link:focus {
   outline: none;
-  border-color: #2d3440;
   background-color: #2d3440;
+  border: 2px solid #2d3440;
 }
 
 .social-link:active {
-  border: 2px solid rgba(252, 252, 252, 0.3);
-  background: #2d3440;
   opacity: 0.5;
 }
 
@@ -523,6 +532,7 @@ body[data-color='yellow'] {
 }
 
 .gift-button {
+  display: block;
   font-weight: 700;
   color: #2d3440;
   text-decoration: none;
@@ -654,7 +664,7 @@ body[data-color='yellow'] {
 .advantages-wrapper {
   position: relative;
   border: 24px solid transparent;
-  background-color: #fcfcfc;
+  background-color: transparent;
   width: 1170px;
   box-sizing: border-box;
   background-clip: padding-box;
@@ -668,9 +678,16 @@ body[data-color='yellow'] {
   right: -24px;
   bottom: -24px;
   background-image: url("../images/wafer-bg.jpg");
-  background-size: cover;
+  background-size: 100% 100%;
   border-radius: 16px;
   z-index: -1;
+}
+
+.advantages-info-wrapper {
+  padding: 56px 40px;
+  box-sizing: border-box;
+  background-color: #fcfcfc;
+  border-radius: 16px;
 }
 
 .advantages-list {
@@ -709,13 +726,6 @@ body[data-color='yellow'] {
 .advantages-tittle {
   font-size: 32px;
   margin-bottom: 56px;
-}
-
-.advantages-info-wrapper {
-  padding: 56px 40px;
-  box-sizing: border-box;
-  border: 1px solid #fcfcfc;
-  border-radius: 16px;
 }
 
 .advantages-text {
@@ -939,14 +949,19 @@ body[data-color='yellow'] {
 }
 
 .delivery-info-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
   position: relative;
-  margin-bottom: 2px;
-  width: 19px;
-  height: 19px;
+  box-sizing: border-box;
+  width: 14px;
+  height: 14px;
   border: none;
   background: transparent;
   outline: none;
   cursor: pointer;
+  margin-left: 10px;
 }
 
 .delivery-info-text {
@@ -994,7 +1009,7 @@ body[data-color='yellow'] {
   box-sizing: border-box;
   background-image: url("../images/feedback-bg.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   padding: 64px;
   min-height: 492px;
   border-radius: 16px;
@@ -1066,29 +1081,46 @@ body[data-color='yellow'] {
   margin: 0 auto;
 }
 
+.footer-about-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 30px;
+}
+
 .footer-about-list {
   list-style-type: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  max-width: 356px;
   display: grid;
-  grid-template-columns: repeat(2, 210px)
+  grid-template-columns: 1fr;;
+  text-align: left;
 }
 
 .footer-about-link {
+  position: relative;
   font-size: 14px;
   line-height: 20px;
   color: #2d3440;
   text-decoration: none;
-  padding-left: 25px;
   background-position: center left 2px;
   background-repeat: no-repeat;
 }
 
+
 .footer-about-link.is-current {
   font-weight: 700;
-  background-image: url("../images/footer-favorite.svg");
 }
+
+.footer-about-link.is-current::after {
+  position: absolute;
+  content: url("../images/footer-favorite.svg");
+  left: -25px;
+  top: 0;
+}
+
+/* .footer-about-item:nth-of-type(odd) {
+  margin-right: 25px;
+} */
 
 .footer-social-list {
   position: unset;
