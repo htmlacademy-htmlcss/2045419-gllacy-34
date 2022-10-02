@@ -12,14 +12,14 @@
 
   <body>
     <header class="page-header">
-      <nav class="navigation navigation-wrapper">
+      <nav class="navigation navigation-wrapper navigation-wrapper-catalog">
         <a class="gllacy-link" href="index.html">
           <img src="/images/logo.svg" alt="Логотип Глэйси." width="137" height="56">
         </a>
         <div class="navigation-left">
           <ul class="navigation-list">
             <li class="navigation-list-item submenu-list">
-              <a class="navigation-link header-link" href="catalog.html">Каталог</a>
+              <a class="navigation-link header-link is-current" href="catalog.html">Каталог</a>
               <div class="navigation-link-submenu">
                 <p class="submenu-text">Новинки</p>
                 <ul class="submenu">
@@ -47,11 +47,11 @@
           </ul>
         </div>
         <ul class="navigation-list navigation-user">
-          <li class="navigation-item">
-            <a class="navigation-link navigation-link-phone header-link" href="tel:+78005558628">+7 800 555-86-28</a>
+          <li class="navigation-item navigation-item-tel">
+            <a class="navigation-link-phone header-link" href="tel:+78005558628">+7 800 555-86-28</a>
           </li>
           <li class="navigation-item navigation-item-search">
-            <button type="button" class="navigation-link header-link header-button navigation-link-search">
+            <button type="button" class="header-link header-button navigation-link-search">
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"
                 aria-hidden="true" focusable="false">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -70,7 +70,7 @@
             </div>
           </li>
           <li class="navigation-item">
-            <button type="button" class="navigation-link header-link header-button navigation-link-personal-account">
+            <button type="button" class="header-link header-button navigation-link-personal-account">
               <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg"
                 aria-hidden="true" focusable="false">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -100,7 +100,7 @@
             </div>
           </li>
           <li class="navigation-item">
-            <button type="button" class="navigation-link header-link header-button navigation-link-busket">
+            <button type="button" class="header-link header-button navigation-link-busket">
               <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg"
                 aria-hidden="true" focusable="false">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -334,7 +334,7 @@
               <img class="icecream-image" src="/images/catalog/blueberry.png" width="168" height="168"
                 alt="шарик крем-брюле с прослойкой черничного джема.">
               <h3 class="icecream-name">Черника</h3>
-              <p class="icecream-text">Крем-брюле с черничным джемом</p>
+              <p class="icecream-text">Крем-брюле<br> с черничным джемом</p>
             </a>
             <div class="price-wrapper">
               <span class="product-price">330 ₽/кг</span>
@@ -353,7 +353,7 @@
               <img class="icecream-image" src="/images/catalog/bubble-gum.png" width="168" height="168"
                 alt="Шарик мороженого голубого цвета с разноцветной крошкой.">
               <h3 class="icecream-name">Бабл-гам</h3>
-              <p class="icecream-text">Ванильный пломбир со сладкой посыпкой</p>
+              <p class="icecream-text">Ванильный пломбир<br> со сладкой посыпкой</p>
             </a>
             <div class="price-wrapper">
               <span class="product-price">320 ₽/кг</span>
@@ -391,7 +391,7 @@
               <img class="icecream-image" src="/images/catalog/banana.png" width="168" height="168"
                 alt="легкое мороженое с бананом.">
               <h3 class="icecream-name">Банан</h3>
-              <p class="icecream-text">Сливочный пломбир с банановым вкусом</p>
+              <p class="icecream-text">Сливочный пломбир<br> с банановым вкусом</p>
             </a>
             <div class="price-wrapper">
               <span class="product-price">340 ₽/кг</span>
@@ -429,7 +429,7 @@
               <img class="icecream-image" src="/images/catalog/strawberry.png" width="168" height="168"
                 alt="пломбир с клубничкой.">
               <h3 class="icecream-name">Клубничка</h3>
-              <p class="icecream-text">Сливочный пломбир с клубничным вкусом</p>
+              <p class="icecream-text">Сливочный пломбир<br> с клубничным вкусом</p>
             </a>
             <div class="price-wrapper">
               <span class="product-price">300 ₽/кг</span>
@@ -467,7 +467,7 @@
               <img class="icecream-image" src="/images/catalog/menthol.png" width="168" height="168"
                 alt="мороженое с приятным холодком.">
               <h3 class="icecream-name">Ментол</h3>
-              <p class="icecream-text">Сливочный пломбир с ментоловым сиропом</p>
+              <p class="icecream-text">Сливочный пломбир<br> с ментоловым сиропом</p>
             </a>
             <div class="price-wrapper">
               <span class="product-price">320 ₽/кг</span>
@@ -595,7 +595,7 @@
             <a class="footer-about-link" href="#">О производстве</a>
           </li>
         </ul>
-        <ul class="footer-about-list">
+        <ul class="footer-about-list footer-about-list-right">
           <li class="footer-about-item">
             <a class="footer-about-link" href="#">Наши документы</a>
           </li>
@@ -605,7 +605,7 @@
         </ul>
       </div>
       <div class="footer-copyright">
-        <a href="https://htmlacademy.ru/" target="_blank">
+        <a class="footer-logo-link" href="https://htmlacademy.ru/" target="_blank">
           <img class="footer-logo" src="./images/made-by.svg" width="93" height="27" alt="Html academy.">
         </a>
         <p class="footer-copyright-text">Сделано в
