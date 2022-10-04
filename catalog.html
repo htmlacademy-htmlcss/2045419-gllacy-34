@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link type="image/x-icon" href="/favicon.ico" rel="shortcut icon">
-    <link type="Image/x-icon" href="/favicon.ico" rel="icon">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png">
+    <link type="image/x-icon" href="favicon.ico" rel="shortcut icon">
+    <link type="Image/x-icon" href="favicon.ico" rel="icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   </head>
 
   <body>
@@ -52,12 +52,6 @@
           </li>
           <li class="navigation-item navigation-item-search">
             <button type="button" class="header-link header-button navigation-link-search">
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true" focusable="false">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M1.66 6.19a4.67 4.67 0 1 1 9.34 0 4.67 4.67 0 0 1-9.34 0Zm8.42 4.69a6 6 0 1 1 .94-.94l2.45 2.44a.67.67 0 1 1-.94.95l-2.45-2.45Z"
-                  fill="#2D3440" />
-              </svg>
               <span class="visually-hidden">Поиск.</span>
             </button>
 
@@ -70,13 +64,7 @@
             </div>
           </li>
           <li class="navigation-item">
-            <button type="button" class="header-link header-button navigation-link-personal-account">
-              <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true" focusable="false">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M8 1.52c0-.36.3-.66.67-.66h2.66a2 2 0 0 1 2 2v9.33a2 2 0 0 1-2 2H8.67a.67.67 0 1 1 0-1.33h2.66a.67.67 0 0 0 .67-.67V2.86a.67.67 0 0 0-.67-.67H8.67A.67.67 0 0 1 8 1.52Zm-3.14 2.2a.67.67 0 0 1 .94 0l3.33 3.33a.67.67 0 0 1 .2.47.66.66 0 0 1-.2.48L5.8 11.33a.67.67 0 1 1-.94-.94l2.2-2.2H.66a.67.67 0 1 1 0-1.33h6.4l-2.2-2.2a.67.67 0 0 1 0-.94Z"
-                  fill="#2D3440" />
-              </svg>
+            <button type="button" class="header-link header-button navigation-link-personal">
               <span class="header-button-text">Вход</span>
             </button>
 
@@ -101,12 +89,6 @@
           </li>
           <li class="navigation-item">
             <button type="button" class="header-link header-button navigation-link-busket">
-              <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true" focusable="false">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M1.17.1a.67.67 0 1 0 0 1.34h1.77l.47 2.34v.05l.97 4.83a1.83 1.83 0 0 0 1.82 1.47h5.62a1.83 1.83 0 0 0 1.82-1.47l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14.65a.67.67 0 0 0-.66-.53H1.17Zm4.52 8.3-.81-4.06h8.23l-.78 4.07a.5.5 0 0 1-.49.39H6.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
-                  fill="#2D3440" />
-              </svg>
               <span class="header-button-text">2 товара</span>
             </button>
             <div class="header-popap header-popap-cart">
@@ -116,7 +98,7 @@
                   <img class="busket-product-image" src="/images/raspberry-mini.png" alt="яркое малиновое мороженое."
                     width="46" height="46">
                   <div class="busket-product-content">
-                    <p class="busket-product-tittle">Малинка</p>
+                    <a class="busket-product-tittle" href="#">Малинка</a>
                     <p class="busket-product-info">1 кг х 310 ₽</p>
                   </div>
                   <p class="busket-product-price">310 ₽</p>
@@ -135,7 +117,7 @@
                   <img class="busket-product-image" src="/images/bubblegum-mini.png"
                     alt="мороженое небесного цвета с посыпкой." width="46" height="46">
                   <div class="busket-product-content">
-                    <p class="busket-product-tittle">Бабл-гам</p>
+                    <a class="busket-product-tittle" href="#">Бабл-гам</a>
                     <p class="busket-product-info">1,5 кг х 320 ₽</p>
                   </div>
                   <p class="busket-product-price">480 ₽</p>
@@ -554,7 +536,7 @@
       <ul class="social-list footer-social-list">
         <li class="social-item">
           <a class="social-link" href="https://t.me/htmlacademy">
-            <span class="visually-hidden">Ссылка на телеграм.</span>
+            <span class="visually-hidden">Ссылка на телеграмм-канал.</span>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
               aria-hidden="true" focusable="false">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -565,7 +547,7 @@
         </li>
         <li class="social-item">
           <a class="social-link" href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">Ссылка на вконтакте.</span>
+            <span class="visually-hidden">Ссылка на группу вконтакте.</span>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
               aria-hidden="true" focusable="false">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -576,7 +558,7 @@
         </li>
         <li class="social-item">
           <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually-hidden">Ссылка на ютуб.</span>
+            <span class="visually-hidden">Ссылка на ютуб-канал.</span>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
               aria-hidden="true" focusable="false">
               <path

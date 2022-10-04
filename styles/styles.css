@@ -152,7 +152,10 @@ body[data-color='yellow'] {
 }
 
 .navigation-link-busket {
-  box-sizing: border-box;
+  background-image: url("../images/busket.svg");
+  background-repeat: no-repeat;
+  background-position: center left 18px;
+  padding-left: 33px;
 }
 
 .gllacy-link {
@@ -196,7 +199,7 @@ body[data-color='yellow'] {
 }
 
 .navigation-wrapper-catalog {
-  padding-top: 22px;
+  padding-top: 21px;
 }
 
 .navigation-list {
@@ -434,13 +437,13 @@ body[data-color='yellow'] {
   box-shadow: inset 0 0 0 1px #fcfcfc;
 }
 
+.slider-pagination-button:focus {
+  background-color: #fcfcfc;
+}
+
 .slider-pagination-button:active {
   box-shadow: none;
   background-color: rgba(252, 252, 252, 0.3);
-}
-
-.slider-pagination-button:focus {
-  background-color: #fcfcfc;
 }
 
 .slider-pagination-button:disabled {
@@ -721,19 +724,19 @@ body[data-color='yellow'] {
 }
 
 .advantages-technology {
-  background-image: url("../images/advantages-icecream.jpg");
+  background-image: url("../images/advantages-icecream.svg");
 }
 
 .advantages-farm {
-  background-image: url("../images/advantages-cow.jpg");
+  background-image: url("../images/advantages-cow.svg");
 }
 
 .advantages-ingredients {
-  background-image: url("../images/advantages-leaf.jpg");
+  background-image: url("../images/advantages-leaf.svg");
 }
 
 .advantages-termopack {
-  background-image: url("../images/advantages-therm.jpg");
+  background-image: url("../images/advantages-therm.svg");
 }
 
 .advantages-tittle {
@@ -1865,6 +1868,9 @@ body[data-color='yellow'] {
   width: 32px;
   height: 32px;
   border-radius: 50%;
+  background-image: url("../images/search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .header-popap {
@@ -1927,6 +1933,13 @@ body[data-color='yellow'] {
 input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
   -moz-appearance: none;
+}
+
+.navigation-link-personal {
+  background-image: url("../images/log-in.svg");
+  background-repeat: no-repeat;
+  background-position: center left 19px;
+  padding-left: 33px;
 }
 
 .header-popap-auth {
@@ -2001,6 +2014,7 @@ input[type="search"]::-webkit-search-cancel-button {
   font-weight: 700;
   margin: 0;
   color: #2d3440;
+  text-decoration: none;
 }
 
 .busket-product-info {
