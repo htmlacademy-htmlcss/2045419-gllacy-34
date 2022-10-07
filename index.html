@@ -18,43 +18,41 @@
         <a class="gllacy-link">
           <img src="/images/logo.svg" alt="Логотип Глэйси." width="137" height="56">
         </a>
-        <div class="navigation-left">
-          <ul class="navigation-list">
-            <li class="navigation-list-item submenu-list">
-              <a class="navigation-link header-link" href="catalog.html">Каталог</a>
-              <div class="navigation-link-submenu">
-                <p class="submenu-text">Новинки</p>
-                <ul class="submenu">
-                  <li class="submenu-item">
-                    <a class="submenu-item-link" href="#">Сливочное</a>
-                  </li>
-                  <li class="submenu-item">
-                    <a class="submenu-item-link" href="#">Щербеты</a>
-                  </li>
-                  <li class="submenu-item">
-                    <a class="submenu-item-link" href="#">Фруктовый лед</a>
-                  </li>
-                  <li class="submenu-item">
-                    <a class="submenu-item-link" href="#">Мелорин</a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="navigation-list-item">
-              <a class="navigation-link header-link" href="#">Доставка и оплата</a>
-            </li>
-            <li class="navigation-list-item">
-              <a class="navigation-link header-link" href="#">О компании</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="navigation-list">
+          <li class="navigation-list-item submenu-list">
+            <a class="navigation-link header-link" href="catalog.html">Каталог</a>
+            <div class="navigation-link-submenu">
+              <p class="submenu-text">Новинки</p>
+              <ul class="submenu">
+                <li class="submenu-item">
+                  <a class="submenu-item-link" href="#">Сливочное</a>
+                </li>
+                <li class="submenu-item">
+                  <a class="submenu-item-link" href="#">Щербеты</a>
+                </li>
+                <li class="submenu-item">
+                  <a class="submenu-item-link" href="#">Фруктовый лед</a>
+                </li>
+                <li class="submenu-item">
+                  <a class="submenu-item-link" href="#">Мелорин</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="navigation-list-item">
+            <a class="navigation-link header-link" href="#">Доставка и оплата</a>
+          </li>
+          <li class="navigation-list-item">
+            <a class="navigation-link header-link" href="#">О компании</a>
+          </li>
+        </ul>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item navigation-item-tel">
             <a class="navigation-link-phone header-link" href="tel:+78005558628">+7 800 555-86-28</a>
           </li>
           <li class="navigation-item navigation-item-search">
             <button type="button" class="header-link header-button navigation-link-search">
-              <span class="visually-hidden">Поиск.</span>
+              <span class="visually-hidden">Поиск по сайту.</span>
             </button>
 
             <div class="header-popap header-popap-search">
@@ -74,10 +72,12 @@
               <p class="header-popap-tittle">Личный кабинет</p>
               <form class="header-popap-form" action="https://echo.htmlacademy.ru">
                 <div class="header-popap-form-wrapper">
-                  <input class="header-popap-input page-input popap-email-input" name="email" type="email"
+                  <label class="visually-hidden" for="header-email">поле ввода электронной почты.</label>
+                  <input class="header-popap-input page-input popap-email-input" name="email" id="header-email" type="email"
                     value="email@example.com" placeholder="введите email">
-                  <input class="header-popap-input page-input" name="password" type="password" value="asdfgh"
-                    placeholder="введите пароль">
+                  <label class="visually-hidden" for="password">поле ввода пароля.</label>
+                  <input class="header-popap-input page-input password-input" name="password" id="password" type="password"
+                    value="asdfgh" placeholder="введите пароль">
                 </div>
                 <div class="header-popap-form-buttons">
                   <button type="submit" class="button red-button popap-button">Войти</button>
@@ -226,7 +226,7 @@
             <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg"
               aria-hidden="true" focusable="false">
               <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M1.14.86a.66.66 0 1 0-.95.95L4.4 6 .2 10.2a.67.67 0 0 0 .95.94L5.8 6.48a.66.66 0 0 0 0-.94L1.15.86Z"/>
+                d="M1.14.86a.66.66 0 1 0-.95.95L4.4 6 .2 10.2a.67.67 0 0 0 .95.94L5.8 6.48a.66.66 0 0 0 0-.94L1.15.86Z" />
             </svg>
           </button>
           <button class="slider-button slider-button-next" type="button">
@@ -234,7 +234,7 @@
             <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg"
               aria-hidden="true" focusable="false">
               <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M1.14.86a.66.66 0 1 0-.95.95L4.4 6 .2 10.2a.67.67 0 0 0 .95.94L5.8 6.48a.66.66 0 0 0 0-.94L1.15.86Z"/>
+                d="M1.14.86a.66.66 0 1 0-.95.95L4.4 6 .2 10.2a.67.67 0 0 0 .95.94L5.8 6.48a.66.66 0 0 0 0-.94L1.15.86Z" />
             </svg>
           </button>
           <ol class="slider-pagination">
@@ -435,7 +435,7 @@
             в курсе всего самого вкусного, что у нас происходит. Обещаем<br> не спамить и не слать всякой ненужной
             ерунды.
             Честно =)</p>
-          <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+          <form class="newsletter-form" action="https://echo.htmlacademy.ru/">
             <label class="visually-hidden" for="newsletter-email">Email</label>
             <input class="email-input delivery-input" type="email" placeholder="email@example.com"
               name="newsletter-email" id="newsletter-email" required>
@@ -446,11 +446,12 @@
       <section class="delivery content-wrapper delivery-wrapper">
         <div class="delivery-content">
           <h2 class="tittle delivery-tittle">Доставка любимого мороженого на дом</h2>
-          <p class="delivery-text">Хочется полакомиться любимым десертом,<br> но нет времени съездить в магазин? Закажите
+          <p class="delivery-text">Хочется полакомиться любимым десертом,<br> но нет времени съездить в магазин?
+            Закажите
             доставку мороженого на
             дом, и курьер привезёт вам ваш заказ в течение часа!</p>
         </div>
-        <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
+        <form class="delivery-form" action="https://echo.htmlacademy.ru/">
           <p class="delivery-form-text">Укажите адрес и дату доставки, и мы свяжемся<br> с вами, чтобы подтвердить
             заказ.</p>
           <div class="delivery-input-wrapper">
@@ -467,12 +468,12 @@
                   <span class="delivery-info-text info-text-closed">Укажите дату</span>
                 </button>
               </div>
-              <input class="delivery-input delivery-input-date" id="date" type="text" name="date"
+              <input class="delivery-input form-input delivery-input-date" id="date" type="text" name="date"
                 placeholder="01.04.2020" required>
             </div>
             <div class="input-wrapper">
               <label class="delivery-form-label" for="tel">Телефон</label>
-              <input class="delivery-input delivery-input-tel" id="tel" type="text" name="tel"
+              <input class="delivery-input form-input delivery-input-tel" id="tel" type="text" name="tel"
                 placeholder="+7 800 999-00-00" required>
             </div>
             <div class="input-wrapper delivery-form-address">
@@ -489,7 +490,7 @@
                     улицы, дома и квартиры</span>
                 </button>
               </div>
-              <input class="delivery-input delivery-input-address" id="address" name="address" type="text"
+              <input class="delivery-input form-input delivery-input-address" id="address" name="address" type="text"
                 placeholder="ул. Большая Конюшенная, 19/8" required>
             </div>
             <button class="button red-button delivery-form-button button" type="submit">Отправить</button>
@@ -513,7 +514,7 @@
     <footer class="page-footer">
       <ul class="social-list footer-social-list">
         <li class="social-item">
-          <a class="social-link" href="https://t.me/htmlacademy">
+          <a class="social-link footer-social-link" href="https://t.me/htmlacademy">
             <span class="visually-hidden">Ссылка на телеграмм-канал.</span>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
               aria-hidden="true" focusable="false">
@@ -524,7 +525,7 @@
           </a>
         </li>
         <li class="social-item">
-          <a class="social-link" href="https://vk.com/htmlacademy">
+          <a class="social-link footer-social-link" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">Ссылка на группу вконтакте.</span>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
               aria-hidden="true" focusable="false">
@@ -535,7 +536,7 @@
           </a>
         </li>
         <li class="social-item">
-          <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
+          <a class="social-link footer-social-link" href="https://www.youtube.com/user/htmlacademyru">
             <span class="visually-hidden">Ссылка на ютуб-канал.</span>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
               aria-hidden="true" focusable="false">
@@ -569,7 +570,9 @@
           <img class="footer-logo" src="./images/made-by.svg" width="93" height="27" alt="Html academy.">
         </a>
         <p class="footer-copyright-text">Сделано в
-          <a class="made-by-link" href="https://htmlacademy.ru/" target="_blank">.html academy</a> ©
+          <a class="made-by-link" href="https://htmlacademy.ru/" target="_blank">
+            <span class="visually-hidden">ссылка на сайт разработчика.</span>
+            .html academy</a> ©
           2021
         </p>
       </div>
@@ -577,16 +580,14 @@
     <div class="modal">
       <div class="modal-container">
         <button class="modal-close">
-          <span class="visually-hidden">Закрыть</span>
+          <span class="visually-hidden">Закрыть окно.</span>
         </button>
-        <h3 class="modal-title">Мы обязательно ответим вам!</h3>
+        <h2 class="modal-tittle">Мы обязательно ответим вам!</h2>
         <form class="modal-form" action="https://echo.htmlacademy.ru">
-          <input class="delivery-input modal-input" name="name" type="text" placeholder="Имя и фамилия" required="">
+          <input class="delivery-input modal-input" name="name" type="text" placeholder="Имя и фамилия" required>
           <input class="delivery-input modal-input" name="email" type="email" placeholder="email@example.com"
             required="">
-          <textarea class="delivery-input modal-input free-input" name="comment" placeholder="В свободной форме">
-          </textarea>
-
+          <textarea class="delivery-input modal-input free-input" placeholder="В свободной форме"></textarea>
           <div class="modal-button-wrapper">
             <button class="button red-button modal-button" type="submit">Отправить</button>
           </div>
