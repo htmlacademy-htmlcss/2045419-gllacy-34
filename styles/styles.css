@@ -171,7 +171,7 @@ body[data-color='yellow'] {
   margin-right: 16px;
 }
 
-.header-link.is-current {
+.header-link.is-active {
   background-color: #ff4a78;
   border-radius: 30px;
   color: #fcfcfc;
@@ -486,20 +486,27 @@ body[data-color='yellow'] {
   border: 2px solid rgba(252, 252, 252, 0.3);
   margin-left: 16px;
   margin-bottom: 5px;
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: content-box;
 }
 
-.social-link::after {
-  position: absolute;
-  content: "";
-  width: 19px;
-  height: 19px;
-  top: 2.5px;
-  left: 2.5px;
-  border-radius: 50%;
-  z-index: -1;
+.social-link-tg {
+  background-image: url("../images/social/telegram.svg");
 }
 
-.social-link:hover::after {
+.social-link-vk {
+  background-image: url("../images/social/vk.svg")
+}
+
+.social-link-youtube {
+  background-image: url("../images/social/youtube.svg");
+}
+
+.social-link:hover {
   background-color: #2d3440;
 }
 
@@ -649,46 +656,38 @@ body[data-color='yellow'] {
   transition: all 100ms ease-out;
   width: 32px;
   height: 32px;
-}
-
-.add-to-cart svg {
-  fill: #FFFFFF;
-  transition: fill 100ms ease-out
+  background-image: url("../images/add-to-cart.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
 }
 
 .add-to-cart:focus {
   outline: none;
   border-color: #2D3440;
+  background-image: url("../images/add-to-cart.svg");
 }
 
 .add-to-cart:hover {
   outline: none;
   border-color: #FF2F64;
   background-color: rgba(252, 252, 252, 0.3);
-}
-
-.add-to-cart:hover svg {
-  fill: #2D3440;
+  background-image: url("../images/add-to-cart-black.svg");
 }
 
 .add-to-cart:active {
   outline: none;
   border-color: #FF2F64;
   background-color: #FFCBD8;
-}
+  background-image: url("../images/add-to-cart-black.svg");
 
-.add-to-cart:active svg {
-  fill: #2D3440;
-}
-
-.add-to-cart:disabled svg {
-  fill: #565C66;
 }
 
 .add-to-cart:disabled {
   pointer-events: none;
   border-color: #B9B9B9;
   background-color: #B9B9B9;
+  background-image: url("../images/add-to-cart-grey.svg");
 }
 
 /* advantages */
@@ -1496,7 +1495,7 @@ body[data-color='yellow'] {
 .control-mark {
   position: absolute;
   left: 2px;
-  top: 1px;
+  top: 2px;
   width: 16px;
   height: 16px;
   background-color: transparent;
@@ -1935,6 +1934,10 @@ body[data-color='yellow'] {
   background-position: center;
 }
 
+.navigation-link-search.is-active {
+  background-image: url("../images/white-search.svg");
+}
+
 .header-popap {
   position: absolute;
   top: 40px;
@@ -2003,6 +2006,14 @@ input[type="search"]::-webkit-search-cancel-button {
   background-repeat: no-repeat;
   background-position: center left 19px;
   padding-left: 33px;
+}
+
+.navigation-link-personal.is-active {
+  background-image: url("../images/white-login.svg");
+}
+
+.navigation-link-personal.is-active .header-button-text {
+  color: #fcfcfc;
 }
 
 .header-popap-auth {
