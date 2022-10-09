@@ -33,12 +33,13 @@ html {
   flex-grow: 1;
 }
 
-.main-catalog {
+.main-index {
   flex: auto;
 }
 
-.main-index {
+.main-catalog {
   flex: auto;
+  padding: 28px 0 0 0;
 }
 
 body {
@@ -198,7 +199,7 @@ body[data-color="yellow"] {
 }
 
 .header-link:focus {
-  outline: 2px solid #2D3440;
+  outline: 2px solid #2d3440;
   outline-offset: 0;
   background-color: rgba(252, 252, 252, 0.5);
   color: #2d3440;
@@ -518,7 +519,7 @@ body[data-color="yellow"] {
 }
 
 .social-link-vk {
-  background-image: url("../images/social/vk.svg")
+  background-image: url("../images/social/vk.svg");
 }
 
 .social-link-youtube {
@@ -687,7 +688,7 @@ body[data-color="yellow"] {
 .add-to-cart:active {
   outline: none;
   border-color: #ff2f64;
-  background-color: #FFCBD8;
+  background-color: #ffcbd8;
   background-image: url("../images/add-to-cart-black.svg");
 }
 
@@ -964,7 +965,7 @@ body[data-color="yellow"] {
 }
 
 .delivery-input:hover {
-  border: 1px solid #2D3440;
+  border: 1px solid #2d3440;
 }
 
 .delivery-input:focus {
@@ -1275,10 +1276,6 @@ body[data-color="yellow"] {
   margin-bottom: 40px;
 }
 
-.main-catalog {
-  padding: 28px 0 0 0;
-}
-
 .breadcrumbs {
   list-style-type: none;
   margin: 0;
@@ -1437,7 +1434,7 @@ body[data-color="yellow"] {
 }
 
 .range-input:focus {
-  outline: 1px solid #2D3440;
+  outline: 1px solid #2d3440;
   outline-offset: 2px;
 }
 
@@ -1808,7 +1805,7 @@ body[data-color="yellow"] {
 }
 
 .pagination-link:active {
-  box-shadow: inset 0 0 0 1px#fcfcfc;
+  box-shadow: inset 0 0 0 1px #fcfcfc;
 }
 
 .pagination-link.active {
@@ -2176,7 +2173,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .header-popap-bottom {
-  border-top: 1px solid #E7E7E7;
+  border-top: 1px solid #e7e7e7;
   padding-top: 30px;
   display: flex;
   align-items: center;
@@ -2306,7 +2303,7 @@ input[type="search"]::-webkit-search-cancel-button {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #2D3440;
+  color: #2d3440;
   transition: all 100ms ease-out;
   resize: none;
   min-height: 149px;
